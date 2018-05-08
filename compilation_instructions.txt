@@ -1,0 +1,2 @@
+Use Intel compilers, make sure you link the zeroMQ libraries and include folder, and add the -shared flag. An example for the Peregrine HPC at NREL:
+ifort -w -fPIC -shared -L $ZEROMQ_LIB -lzmq -I $ZEROMQ_INCLUDE -o zeromqSSCFAST.so zeromqSSCFAST.f90
